@@ -277,12 +277,4 @@ module.exports = {
       message.channel.send(avatarList);
   },
 };
-
-if (message.content == "!출근") {
-  return message.reply("@everyone 관리자님이 출근하셨습니디.")
-}
-if (message.content == "!퇴근") {
-  return message.reply("@everyone 관리자님이 퇴근하셨습니다.")
-}
-
 client.login(token)
