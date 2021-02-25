@@ -49,7 +49,6 @@ client.on("message", (message) => {
 
   if (message.content == "ping") {
     return message.reply("pong")
-    
   }
   if (message.content == "embed") {
     let img = "https://yt3.ggpht.com/yti/ANoDKi4NXEnUEqMvxq7KTqShApHlqms2VCvz39HGACbaPA=s88-c-k-c0x00ffffff-no-rj-mo"
@@ -278,9 +277,11 @@ module.exports = {
       message.channel.send(avatarList);
   },
 };
-if (message.content == "!출근")
-  return message.reply("@everyone 관리자님이 출근하셨습니다")
 
-if (message.content == "ping") 
-  return message.reply("pong")
+if (message.content == "!출근") {
+  return message.reply("@everyone 관리자님이 출근하셨습니디.")
+}
+if (message.content == "!퇴근") {
+  return message.reply("@everyone 관리자님이 퇴근하셨습니다.")
+}
 client.login(token)
