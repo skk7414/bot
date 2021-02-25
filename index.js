@@ -284,5 +284,10 @@ module.exports = {
       message.channel.send(avatarList);
   },
 };
+const commandFile = readdirSync(join(__dirname, "commands")).filter(file => file.endswith("js"));
 
+for (const file of commandFile) {
+  const command = require(join(__dirname, "commands", `$(file)`));
+  client.commands.set(command.name, command);
+}
 client.login(token)
