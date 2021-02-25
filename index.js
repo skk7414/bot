@@ -271,12 +271,12 @@ client.on('message' ,msg=>{
 })
 client.on('message' ,msg=>{
   if(msg.content === "!잠수"){
-    msg.reply("@everyone 관리자님이 잠수하셨습니다")
+    msg.reply("@everyone 관리자님이 잠수를 시작하셨습니다")
   }
 })
 client.on('message' ,msg=>{
   if(msg.content === "!잠수1"){
-    msg.reply("@everyone 관리자님이 잠수끝났습니다")
+    msg.reply("@everyone 관리자님이 잠수가 끝났습니다")
   }
 })
 client.login(token)
