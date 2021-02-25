@@ -261,7 +261,12 @@ client.on('message', async message => {
 })
 client.on('message' ,msg=>{
   if(msg.content === "!출근"){
-    msg.reply("관리자님이 출근하셨습니다")
+    msg.reply("@everyone 관리자님이 출근하셨습니다")
+  }
+})
+client.on('message' ,msg=>{
+  if(msg.content === "!퇴근"){
+    msg.reply("@everyone 관리자님이 퇴근하셨습니다")
   }
 })
 
