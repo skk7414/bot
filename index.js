@@ -211,9 +211,6 @@ function changeCommandStringLength(str, limitLen = 8) {
 
   return tmp
 }
-client.on('messageUpdate', async message => {
-  message.channel.send(`<@!${message.author.id}> 님이 \`${message.content}\` 을(를) 수정하셨습니다.`)
-}) 
 //뮤트
 
 //뮤트
